@@ -22,11 +22,11 @@ public class Main {
         if (middleName.equals("") && suffix.equals("")) {
             System.out.printf("%s %s \n ", firstName.trim(), lastName.trim());
         } else if (middleName.equals("")) {
-            System.out.printf("%s %s %s \n ", firstName.trim() , lastName.trim(), suffix.trim());
+            System.out.printf("%s %s, %s \n ", firstName.trim() , lastName.trim(), suffix.trim());
         } else if (suffix.equals("")) {
             System.out.printf("%s %s %s \n ", firstName.trim(), middleName.trim(), lastName.trim());
         } else {
-            System.out.printf("%s %s %s %s \n ", firstName.trim(), middleName.trim(), lastName.trim(), suffix);
+            System.out.printf("%s %s %s, %s \n ", firstName.trim(), middleName.trim(), lastName.trim(), suffix);
         }
     }
 }
